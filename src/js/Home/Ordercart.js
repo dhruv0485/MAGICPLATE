@@ -34,7 +34,7 @@ const OTPVerification = ({ email, orderDetails, onVerify, onClose }) => {
       setLoading(true);
       setError('');
       
-      const response = await fetch('http://192.168.1.8:5000/api/send-otp', {
+      const response = await fetch('https://magicplate.vercel.app/api/send-otp', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ const OTPVerification = ({ email, orderDetails, onVerify, onClose }) => {
       setLoading(true);
       setError('');
       
-      const response = await fetch('http://192.168.1.8:5000/api/resend-otp', {
+      const response = await fetch('https://magicplate.vercel.app/api/resend-otp', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -100,7 +100,7 @@ const verifyOTP = async () => {
     setError('');
     
     
-    const response = await fetch('http://192.168.1.8:5000/api/verify-otp', {
+    const response = await fetch('https://magicplate.vercel.app/api/verify-otp', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -273,7 +273,7 @@ function OrderCart() {
         total: calculateTotal()
       };
   
-      const response = await fetch('http://192.168.1.8:5000/api/verify-otp', {
+      const response = await fetch('https://magicplate.vercel.app/api/verify-otp', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

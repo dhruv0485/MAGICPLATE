@@ -4,7 +4,7 @@ import '../../css/signup.css';
 
 async function submitSignUpData(SignUpData) {
     try {
-        const API_URL = process.env.REACT_APP_API_URL || 'http://192.168.1.8:5000'
+        const API_URL = process.env.REACT_APP_API_URL || 'https://magicplate.vercel.app/'
         const response = await fetch(`${API_URL}/newLoginCustomer`, {
             method: 'POST',
             headers: {
@@ -26,7 +26,7 @@ async function submitSignUpData(SignUpData) {
 
 async function SubmitLogInData(LogInData) {
     try {
-        const API_URL = process.env.REACT_APP_API_URL || 'http://192.168.1.8:5000'
+        const API_URL = process.env.REACT_APP_API_URL || 'https://magicplate.vercel.app/'
         const response = await fetch(`${API_URL}/login`, {
             method: 'POST',
             headers: {
