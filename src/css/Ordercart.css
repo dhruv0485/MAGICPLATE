@@ -1,0 +1,491 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ensure the body doesn't scroll horizontally */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+#Left-Bar{
+    background-color: #ECCFD3;
+    min-height: 100vh;
+    width: 50vw;
+    overflow-y: auto;
+    padding: 20px;
+}
+#Right-Bar{
+    position: fixed;
+    background-color: #ECCFD3;
+    height: 100vh;
+    width: 50vw;
+    left: 50vw;
+    width: 50vw;
+    top: 0vh;
+    padding: 20px;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+}
+
+
+/* Form Container Styles */
+.form-container {
+    padding: 24px;
+    max-width: 100%;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .section-title {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Customer Form Styles */
+  .customer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 23px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+  }
+  
+  .form-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+  }
+  
+  .form-input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #666;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+  }
+  
+  /* Payment Section Styles */
+  .payment-section {
+    margin-top: 32px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+  }
+  
+  .payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+  }
+  
+  .payment-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+  }
+  
+  .payment-card:hover {
+    background-color: #f9f9f9;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+  }
+  
+  .payment-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+  }
+  
+  .payment-radio {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+  }
+  
+  /* Pay Button Styles */
+  .pay-button {
+    width: 100%;
+    margin-top: 24px;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+  }
+  
+  .pay-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  /* Placeholder Styles */
+  ::placeholder {
+    color: #999;
+  }
+
+  /* Add these styles to your Ordercart.css file */
+
+
+.cart-summary {
+    background-color: transparent;
+    padding: 20px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    height: calc(100vh-40px);
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-summary h2 {
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #333;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.cart-items-1 {
+    margin-bottom: 20px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.cart-item-1 {
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.item-image {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 4px;
+    font-size: 23px;
+}
+
+.item-details {
+    flex: 1;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.item-details h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #666;
+    margin: 5px 0;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.item-quantity {
+    color: #888;
+    font-size: 17px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.coupon-section {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.coupon-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.coupon-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.coupon-input button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.price-summary {
+    margin-top: 20px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #666;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    font-style: normal;
+}
+
+.price-row.total {
+    font-weight: bold;
+    color: #333;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.price-row.discount {
+    color: #28a745;
+}
+
+.proceed-to-pay {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.proceed-to-pay:hover {
+    background-color: #218838;
+}
+
+/* Add these styles to your Ordercart.css */
+
+/* Blur effect for bars when OTP is shown */
+.blur-background {
+    filter: blur(5px);
+    pointer-events: none; /* Prevents interaction with blurred content */
+    transition: filter 0.3s ease;
+  }
+  
+  /* OTP Container */
+  .otp-container {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ECCFD3;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    width: 400px;
+    font-family: "Pompiere", sans-serif;
+  }
+  
+  .otp-container.show {
+    display: block;
+  }
+  
+  .otp-title {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+  }
+  
+  .otp-subtitle {
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #666;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+  }
+  
+  .otp-input-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+  
+  .otp-input {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 24px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+  }
+  
+  .otp-input:focus {
+    outline: none;
+    border-color: #666;
+  }
+  
+  .verify-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 23px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+  }
+  
+  .verify-button:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .resend-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #666;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+  }
+  
+  .resend-link {
+    color: #2563eb;
+    cursor: pointer;
+    text-decoration: underline;
+  }

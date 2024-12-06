@@ -1,0 +1,775 @@
+#container {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+#Content-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 12vh;
+    width: 100vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #F4E8F2;
+}
+
+#nav-content {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+}
+
+#company {
+    padding: 0px 30px;
+    font-size: 36px;
+    font-family: "Jim Nightshade", cursive;
+}
+
+.content-list {
+    padding: 0px 10px;
+    font-size: 24px;
+    font-family: "Jim Nightshade", cursive;
+    margin-right: 35px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+#content-box-menu{
+    position: relative;
+}
+
+#Upper-Box {
+    width: 100vw;
+    height: 50vh;
+    background: url('/public/images/pexels-silvia-trigo-545701-1857157.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Upper-Box-Slogan {
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    color: black;
+    font-weight: bold;
+}
+
+#Body-menu-content {
+    display: flex;
+    width: 100vw;
+    position: relative;
+}
+
+#menu-side-bar {
+    height: 100vh;
+    width: 15vw;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+#menu-side-cookies,
+#menu-side-pastries,
+#menu-side-macaroons,
+#menu-side-cakes,
+#menu-side-donuts {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+
+#menu-cookies,
+#menu-pastries,
+#menu-macaroons,
+#menu-cakes,
+#menu-donuts {
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+#menu-body {
+    background-color: #ECCFD3;
+    width: 85vw;
+    min-height: calc(100vh - 62vh);
+    position: relative;
+    left: 15vw;
+    overflow-y: auto;
+    padding-bottom: 50px;
+}
+#cookies-category, #pastries-category, #macrons-category, #cakes-category, #donuts-category {
+    min-height: 80vh;
+    width: 100%;
+}
+
+#cookies-header, #pastries-header, #macrons-header, #cakes-header, #donuts-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 20px 0px;
+}
+
+#header-cookies, #header-pastries, #header-macrons, #header-cakes, #header-donuts {
+    font-family: "Pompiere", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 48px;
+}
+
+.cookies-grid, .pastries-grid, .macrons-grid, .cakes-grid, .donuts-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.cookies-row, .pastries-row, .macrons-row, .cakes-row, .donuts-row {
+    height: 603px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.cookies-item, .pastries-item, .macrons-item, .cakes-item, .donuts-item {
+    height: 100%;
+    width: 431px;
+    position: relative;
+    top: 0%;
+    background-color: white;
+    border-radius: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cookies-image, .pastries-image, .macrons-image, .cakes-image, .donuts-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 387px;
+}
+
+.cookies-image img, .pastries-image img, .macrons-image img, .cakes-image img, .donuts-image img {
+    width: 401px;
+    height: 387px;
+    object-fit: cover;
+    border-radius: 28px;
+    margin-top: 20px;
+}
+
+.image-placeholder {
+    width: 401px;
+    height: 387px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+}
+
+.cookies-header, .pastries-header, .macrons-header, .cakes-header, .donuts-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 4%;
+    width: 100%;
+}
+
+.cookies-header header, .pastries-header header, .macrons-header header, .cakes-header header, .donuts-header header {
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.cookies-button button, .pastries-button button, .macrons-button button, .cakes-button button, .donuts-button button {
+    background-color: #9BCCA3;
+    border-radius: 9px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-radius: 28px;
+    width: 105px;
+    height: 38px;
+    color: black;
+    font-size: 23px;
+    margin: 0px 15px;
+}
+#price-menu-button-cookies, #price-menu-button-pastries, #price-menu-button-cakes, #price-menu-button-donuts, #price-menu-button-macrons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    top: 13%;
+}
+
+#cookies-price, #pastries-price, #cakes-price, #donuts-price, #macrons-price{
+    font-size: 23px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0px 15px;
+}
+
+#veg-info-bar{
+    width: 100%;
+    height: 31px;
+    position: relative;
+    top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#veg-icons{
+    height: 31px;
+    width: 30px;
+    margin: 0px 15px;
+}
+
+#icons-veg{
+    height: 100%;
+    width: 100%;
+}
+
+#info-icons-cookies, #info-icons-pastries, #info-icons-donuts, #info-icons-cakes, #info-icons-macrons{
+    height: 31px;
+    width: 32px;
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+#icons-info{
+    height: 100%;
+    width: 100%;
+}
+
+#pop-up-user{
+    position: absolute;
+    right: 2%;
+    top: 0;
+    background-color: white;
+    width: 278px;
+    height: 464px;
+    display: none;
+}
+
+#User-Hello {
+    position: relative;
+    height: 68px;
+    width: 100%;
+    background-color: black;
+}
+
+#Hello-User{
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+#personal-details, #order-details, #wish-list-details, #buy-again-details, #switch-account-details,#logout-details{
+    height: 66px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+#personal-icon,#orders-icon,#wishlist-icon,#buyagain-icon,#switchacc-icon,#logout-icon{
+    display: flex;
+    align-items: center;
+}
+#person-icons,#order-icons,#icon-wishlist,#icon-buyagain,#icon-switchacc,#icon-logout{
+    width: 26px;
+    height: 24px;
+    margin: 0px 20px;
+}
+#personal-slogan,#orders-slogan,#wishlist-slogan,#buyagain-slogan,#switchacc-slogan,#logout-slogan{
+    display: flex;
+    align-items: center;
+}
+#slogan{
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+
+
+/* Overlay styling */
+/* Overlay styling */
+#Cards-body-menu.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+/* Menu cards container wrapper */
+#menu-cards {
+    position: relative;
+    width: 431px;
+    max-width: 90vw;
+    max-height: 90vh;
+    background-color: white;
+    border-radius: 28px;
+    padding: 20px 35px 20px 20px; /* Increased right padding to accommodate scrollbar */
+    animation: slideIn 0.3s ease-out;
+    overflow-y: auto;
+    /* Webkit browsers custom scrollbar */
+    &::-webkit-scrollbar {
+        width: 8px;
+        background: transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        border: 2px solid transparent;
+        background-clip: content-box;
+    }
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        margin: 10px 0;
+    }
+    /* Firefox custom scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+/* Image container */
+#menu-cards-image {
+    width: 100%;
+    min-height: 387px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#menu-cards-image img {
+    width: 401px;
+    max-width: 100%;
+    height: 387px;
+    object-fit: cover;
+    border-radius: 28px;
+    margin-top: 20px;
+}
+
+/* Content section */
+#menu-cards-content {
+    padding: 0 20px 20px 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#menu-cards-name h2 {
+    font-family: "Pompiere", sans-serif;
+    font-size: 32px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+#menu-cards-description {
+    flex-grow: 1;
+}
+
+#menu-cards-description p {
+    font-family: "Pompiere", sans-serif;
+    font-size: 23px;
+    color: #666;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.5;
+}
+
+#menu-cards-price h3 {
+    font-family: "Pompiere", sans-serif;
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+#menu-cards-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.add-to-cart-button {
+    background-color: #9BCCA3;
+    border: none;
+    border-radius: 28px;
+    padding: 10px 30px;
+    font-family: "Pompiere", sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto;
+}
+
+.add-to-cart-button:hover {
+    background-color: #8ab596;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 50%;
+    z-index: 1001;
+}
+
+.close-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#users{
+    height: 19px;
+    width: 19px;
+    cursor: pointer;
+}
+
+#user-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;  
+    border: 2px solid transparent;  
+    border-radius: 28px;
+    width: 105px;
+    height: 38px;
+    margin: 0px 15px;
+    padding: 0 10px;
+    position: relative;
+    right: 25%;
+}
+
+.quantity-control-btn {
+    background: none;
+    border: none;
+    font-family: "Pompiere", sans-serif;
+    font-size: 23px;  
+    font-weight: 400; 
+    font-style: normal;  
+    cursor: pointer;
+    padding: 0 8px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.quantity--control-btn:hover {
+    transform: scale(1.1);
+}
+
+.quantity-control-btn:active {
+    transform: scale(0.95);
+}
+
+.quantity-display {
+    font-family: "Pompiere", sans-serif;
+    font-size: 23px;  
+    font-weight: 400;  
+    font-style: normal;  
+    min-width: 20px;
+    text-align: center;
+}
+
+/* Cart Sidebar Styles */
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.cart-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;  
+    font-style: normal;  
+}
+
+.cart-empty {
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;  
+    font-style: normal;  
+}
+
+.cart-item-details {
+    flex-grow: 1;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;  
+    font-style: normal;  
+}
+
+.cart-item-name {
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;  
+    font-style: normal;  
+}
+
+.cart-item-price {
+    color: #666;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;  
+    font-style: normal;  
+}
+
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;  
+    font-style: normal;  
+}
+
+.cart-quantity-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;  
+    font-style: normal;  
+}
+
+.cart-quantity-btn:hover {
+    background-color: #e0e0e0;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;  
+    font-style: normal;  
+}
+
+.cart-quantity {
+    min-width: 20px;
+    text-align: center;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;  
+    font-style: normal;  
+}
+
+.cart-footer {
+    position: sticky;
+    bottom: 0;
+    background-color: white;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;  
+    font-style: normal;  
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;  
+    font-style: normal;  
+}
+
+.cart-checkout {
+    width: 100%;
+    padding: 12px;
+    background-color: #9BCCA3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;  
+    font-style: normal;  
+}
+
+.cart-checkout:hover {
+    background-color: #9BCCA3;
+}
+
+.cart-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #9BCCA3;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    transition: transform 0.2s;
+}
+
+.cart-toggle:hover {
+    transform: scale(1.05);
+}
+
+.cart-toggle img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Cart Close Button */
+.cart-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    padding: 5px;
+}
+
+.cart-close:hover {
+    color: #666;
+}
+
+/* Badge for cart items count */
+.cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff4444;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-family: "Pompiere", sans-serif;
+    min-width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Adjust main content when cart is visible */
+.menu-body {
+    transition: margin-right 0.3s ease;
+}
+
+.menu-body.cart-visible {
+    margin-right: 300px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 480px) {
+    #menu-cards {
+        width: 95vw;
+        margin: 10px;
+        padding: 15px 30px 15px 15px; /* Adjusted padding for scrollbar */
+    }
+
+    #menu-cards-image img {
+        height: auto;
+        width: 100%;
+    }
+
+    #menu-cards-content {
+        padding: 0 15px 15px 15px;
+    }
+}

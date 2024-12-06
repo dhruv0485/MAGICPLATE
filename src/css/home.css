@@ -1,0 +1,876 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*#container{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../../public/images/pexels-pixabay-265801.jpg') no-repeat center center/cover;
+    transition: background-image 1s ease-in-out;
+}
+ #container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out; 
+  }*/
+#container {
+    width: 100vw;
+    min-height: 100vh;
+}
+
+#Content-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 12vh;
+    width: 100vw;
+    background-color: #F4E8F2;
+    position: sticky;
+}
+
+#nav-content {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+}
+
+#company {
+    padding: 0px 30px;
+    font-size: 36px;
+    font-family: "Jim Nightshade", cursive;
+}
+
+.content-list {
+    padding: 0px 10px;
+    font-size: 24px;
+    font-family: "Jim Nightshade", cursive;
+    margin-right: 10%;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+#Body-container {
+    width: 100vw;
+    min-height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out;
+}
+
+#Big-Box {
+    width: 100vw;
+    height: 88vh;
+    position: relative;
+}
+
+#Center-Content {
+    width: 100vw;
+    height: 44vh;
+    position: relative;
+    top: 27%;
+}
+
+#magicplate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Company-header {
+    font-family: "Jim Nightshade", cursive;
+    font-size: 64px;
+}
+
+#slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 20%;
+}
+
+#slogan-name {
+    font-size: 55px;
+    font-family: "Licorice", cursive;
+    color: #AE66A9;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 30%;
+}
+
+#menu-button {
+    width: 168px;
+    height: 49px;
+    border-color: transparent;
+    background-color: #DB9B9B;
+    font-family: "Jim Nightshade", cursive;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 12vh;
+    position: absolute;
+    bottom: 0;
+}
+
+#icons {
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#instagram {
+    height: 38px;
+    width: 76px;
+    background-image: url('../../public/images/instagram\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#facebook {
+    height: 38px;
+    width: 76px;
+    background-image: url('../../public/images/facebook.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#youtube {
+    height: 38px;
+    width: 76px;
+    background-image: url('../../public/images/youtube\ \(1\).png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#copyright {
+    padding: 0px 30px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+#dash {
+    display: none;
+}
+
+#side-bar {
+    display: none;
+}
+
+#featured-menu {
+    min-height: 80vh;
+    width: 100vw;
+}
+
+#featured-header {
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+
+#featured-head {
+    font-family: "Pompiere", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 64px;
+}
+
+#featured-slogan {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+}
+
+#featured-line {
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    color: #60205B;
+}
+
+#menu-images{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 75vh;
+    position: relative;
+}
+
+#doughnut-images{
+    width: 25vw;
+    height: 100%;
+}
+#images-doughnut{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+#doughnut{
+    height: 425px;
+    width: 370px;
+    position: relative;
+    right: 10%;
+    bottom: 10%;
+}
+
+#doughnuts-header{
+    height: 25%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#doughnuts-head{
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    font-size: 32px;
+    bottom: 40%;
+    right: 12%;
+}
+
+#truffle-images{
+    width: 25vw;
+    height: 100%;
+}
+
+#images-truffle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    width: 100%;
+    position: relative;
+}
+#truffle{
+    height: 425px;
+    width: 370px;
+    position: relative;
+    right: 6%;
+    bottom: 20%;
+}
+
+#truffle-header{
+    height: 25%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 10%;
+    right: 8%;
+}
+
+#truffle-head-1{
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+
+#truffle-head-2{
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+
+#macrons-images{
+    width: 25vw;
+    height: 100%;
+}
+#images-macrons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    width: 100%;
+    position: relative;
+}
+#macrons-1{
+    height: 350px;
+    width: 295px;
+    position: relative;
+    right: 15%;
+    bottom: 13%;
+
+}
+
+#macrons-header-home{
+    height: 25%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 10%;
+    bottom: 10%;
+}
+
+#macrons-head-1{
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+
+#macrons-head-2{
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+
+#cookies-images{
+    width: 25vw;
+    height: 100%;
+}
+#images-cookies{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    width: 100%;
+    position: relative;
+}
+#cookies-1{
+    height: 220px;
+    width: 250px;
+    position: relative;
+    right: 3%;
+    bottom: 0%;
+    top: 10%;
+}
+
+#cookies-header-home{
+    height: 25%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 5%;
+    bottom: 10%;
+}
+
+#cookies-head-1{
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+
+#cookies-head-2{
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+
+#Outer-Box{
+    min-height: 88vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DB9B9B40;
+    position: absolute;
+}
+#About-box{
+    width: 393px;
+    height: 308px;
+    position: absolute;
+    left: 85px;
+}
+#header-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    height: 40%;
+    position: relative;
+    bottom: 32%;
+}
+#story-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    position: relative;
+    left: 10%;
+    width: 100%;
+    height: 55%;
+
+}
+#box-story{
+    font-size: 28px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+#Story-image-box{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    background: url('../../public/images/love.png') no-repeat center center/cover;
+}
+
+#users-1{
+    height: 19px;
+    width: 19px;
+}
+
+#user-icons-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#content-box-home{
+    position: relative;
+}
+
+#contact-us-box{
+    width: 100%;
+    min-height: 88vh;
+    position: absolute;
+    margin-top: 88vh;
+}
+
+#contact-us-header {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px; /* Reduced from 55px */
+}
+
+#contact-us-header::before,
+#contact-us-header::after {
+    content: "";
+    display: block;
+    width: 83vh; /* Length of the lines */
+    height: 2px; /* Thickness of the lines */
+    margin: 0 10px;
+    background-color: black;
+}
+
+#contact-header{
+    font-size: 46px;
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#Info-Box{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    top: 5vh;
+    display: flex;
+}
+
+#Contact-Info{
+    height: 100%;
+    width: 50%;
+    border-right: 1px solid black;
+}
+
+#Phone-Email{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact-us-icon{
+    width: 78px;
+    height: 68px;
+    margin-top: 65px;
+}
+
+#Mobile-No-info{
+    width: 100%;
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Mobile-No-Header{
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 34px;
+}
+
+#Email-Id-Info{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Email-Id-Header{
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 34px;
+}
+
+#Address-Info{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Address-Info-Header{
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 34px;
+}
+
+#Platforms{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 75px;
+}
+
+#head-platform{
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 34px;
+    padding: 0px 45px;
+}
+
+#social-media-icons{
+    padding: 0px 45px;
+}
+
+#icon-media{
+    width: 78px;
+    height: 68px;
+}
+
+#icon-insta{
+    height: 42px;
+    width: 41px;
+}
+
+#icon-fb{
+    height: 42px;
+    width: 41px;
+}
+
+#Instagram-media{
+    display: flex;
+    align-items: center;
+    padding: 0 45px;
+    margin-top: 70px;
+}
+
+#Facebook-media{
+    display: flex;
+    align-items: center;
+    padding: 0 45px;
+    margin-top: 25px;
+}
+
+#insta-header{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+#insta-head{
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 28px;
+}
+
+#fb-header{
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+
+#fb-head{
+    font-family: "Pompiere", sans-serif;
+    font-weight: 400;
+    font-style: bold;
+    font-size: 28px;
+}
+
+
+@media (max-width: 720px) {
+
+    /*body,
+    html {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }*/
+
+    #Content-bar {
+        position: relative;
+        top: 0;
+    }
+
+    #company {
+        height: 12vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .content-box {
+        display: none;
+    }
+
+    #slogan-name {
+        font-size: 23px;
+        font-family: "Licorice", cursive;
+        color: #AE66A9;
+    }
+
+    #slogan {
+        bottom: 10%;
+    }
+
+    #menu {
+
+        bottom: 12%;
+    }
+
+    #footer {
+        bottom: 5.2%;
+    }
+
+    #instagram {
+        height: 35px;
+        width: 70px;
+    }
+
+    #facebook {
+        height: 35px;
+        width: 70px;
+
+    }
+
+    #youtube {
+        height: 35px;
+        width: 70px;
+    }
+
+    #icons {
+        padding: 0px 6px;
+    }
+
+    #copyright {
+        padding: 0px 15px;
+        font-size: 14px;
+    }
+
+    #dash {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: block;
+    }
+
+    #menu-bar {
+        height: 25px;
+        width: 40px;
+        padding-left: 5px;
+    }
+
+    #side-bar {
+        display: block;
+        background-color: #ff98d7;
+        height: 100vh;
+        width: 75vw;
+        position: absolute;
+        top: 0;
+        left: -75vw;
+        z-index: 1;
+        transition: left 0.3s ease-in-out;
+    }
+
+    #side-bar.active {
+        left: 0;
+    }
+
+    #side-bar-header {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #side-head {
+        font-size: 22px;
+        font-family: "Jim Nightshade", cursive;
+        color: black;
+    }
+
+    #cross {
+        position: absolute;
+        right: 7%;
+        height: 13px;
+        width: 13px;
+        filter: brightness(0) invert(1);
+    }
+
+    #side-bar-home {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+
+    #side-home {
+        font-size: 22px;
+        font-family: "Jim Nightshade", cursive;
+        color: black;
+        text-decoration: none;
+    }
+
+    #side-bar-about {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+
+    #side-about {
+        font-size: 22px;
+        font-family: "Jim Nightshade", cursive;
+        color: black;
+        text-decoration: none;
+    }
+
+    #side-bar-contact {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+
+    #side-contact {
+        font-size: 22px;
+        font-family: "Jim Nightshade", cursive;
+        color: black;
+        text-decoration: none;
+    }
+
+    #side-bar-signup {
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #side-signup {
+        font-size: 22px;
+        font-family: "Jim Nightshade", cursive;
+        color: black;
+        text-decoration: none;
+    }
+
+    .home-side {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .about-side {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .contact-side {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .signup-side {
+        text-decoration: none;
+        list-style: none;
+    }
+
+    #container {
+        background-size: cover;
+        background-position: center;
+    }
+}
