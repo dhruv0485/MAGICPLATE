@@ -20,7 +20,7 @@ function Menu() {
     useEffect(() => {
         const fetchData = async (endpoint, setterFunction) => {
             try {
-                const response = await fetch(`http://192.168.1.8:3000/api/${endpoint}`);
+                const response = await fetch(`https://magicplate-admin.vercel.app/api/${endpoint}`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
@@ -163,7 +163,7 @@ function Menu() {
                         </div>
                     ) : (
                         <img 
-                            src={`http://192.168.1.8:3000/uploads/${item.image}`}
+                            src={`https://magicplate-admin.vercel.app/uploads/${item.image}`}
                             alt={item.name}
                             onError={() => handleImageError(item._id, category)}
                         />
@@ -384,7 +384,7 @@ function Menu() {
                         <div id="menu-cards-image">
                             {selectedProduct && (
                                 <img 
-                                    src={`http://192.168.1.8:3000/uploads/${selectedProduct.image}`}
+                                    src={`https://magicplate-admin.vercel.app/uploads/${selectedProduct.image}`}
                                     alt={selectedProduct.name}
                                     onError={(e) => {
                                         e.target.src = '/images/placeholder.png';

@@ -467,7 +467,7 @@ function OrderCart() {
               <div key={index} className="cart-item-1">
                 <div className="item-image">
                   <img
-                    src={`http://192.168.1.8:3000/uploads/${item.image}`}
+                    src={`https://magicplate-admin.vercel.app/uploads/${item.image}`}
                     alt={item.name}
                     onError={(e) => {
                       e.target.src = '/images/placeholder.png';
